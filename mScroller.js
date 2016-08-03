@@ -10,7 +10,7 @@ function mScroller(options) {
     var defaults = {
       wrap: $("#wrap"),
       content: $("#cont"),
-      speed: 20,
+      wheel: 20,
       backgroundColor: '#ccc'
     };
 
@@ -49,7 +49,7 @@ function mScroller(options) {
 
       var $sh = $scrollBar.height(); //获取滚动条宽度
       var disX = 0; //初始化disx
-      var sMoveDis = params.speed; //滚动滚轮单次移动的距离
+      var sMoveDis = params.wheel; //滚动滚轮单次移动的距离
       //设置滚动条滚动距离函数
       function fnChangePos(data) {
         if (data < 0) data = 0;
